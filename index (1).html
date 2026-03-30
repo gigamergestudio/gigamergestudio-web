@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>GigaMerge Studio - Mobile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="loading-screen">
+            <div class="loader"></div>
+            <h2>GigaMerge Studio</h2>
+            <p>Where creativity meets Technology...</p>
+        </div>
+
+        <!-- Main App Container -->
+        <div id="main-app" style="display: none;">
+            <!-- Navigation Bar -->
+            <nav class="glass-nav">
+                <div class="nav-container">
+                    <div class="logo">
+                        <i class="fas fa-crown" style="color: #6366f1;"></i>
+                        <span>GigaMerge</span>
+                    </div>
+                    <div class="nav-icons">
+                        <i class="fas fa-search" id="search-icon"></i>
+                        <i class="fas fa-bell" id="notification-icon"></i>
+                        <i class="fas fa-user-circle" id="profile-icon"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- Dynamic Content Will Load Here -->
+                <div id="page-content"></div>
+            </main>
+
+            <!-- Bottom Navigation -->
+            <div class="bottom-nav">
+                <div class="nav-item active" data-page="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </div>
+                <div class="nav-item" data-page="projects">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projects</span>
+                </div>
+                <div class="nav-item" data-page="messages">
+                    <i class="fas fa-comment"></i>
+                    <span>Messages</span>
+                </div>
+                <div class="nav-item" data-page="wallet">
+                    <i class="fas fa-wallet"></i>
+                    <span>Wallet</span>
+                </div>
+                <div class="nav-item" data-page="profile">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+</body>
+</html>
